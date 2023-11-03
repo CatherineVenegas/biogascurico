@@ -1,0 +1,855 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #669900;
+    --dark-color: #005600;
+    --light-color: #fcfffc;
+    --grey-color: rgb(216, 216, 216);
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13.5px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Contacto */
+.contact-bar {
+    background-color: var(--primary-color);
+    padding-bottom: 7px;
+    padding-top: 8px;
+}
+
+.contact-bar .container {
+    display: flex;
+    justify-content: right;
+}
+
+.contact-bar .container a {
+    color: var(--light-color);
+    padding-right: 26px;
+    align-items: center;
+}
+
+.contact-bar .container a .material-symbols-outlined {
+    font-size: 19px;
+    padding-right: 2px;
+}
+
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container .logo {
+    align-self: left;
+}
+
+.navbar .logo img {
+    width: 138px
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 8px 20px;
+    display: block;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.3s;
+    color: var(--primary-color);
+}
+
+.navbar ul li a:hover {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+
+/* Hero */
+.hero {
+    margin-bottom: 15px;
+}
+
+.hero .container {
+    background: url(images/hero-background.jpg) no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 80vh;
+    min-height: 580px;
+    display: flex;
+    padding-top: 13vh;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero .hero-content {
+    text-align: center;
+    width: 440px;
+}
+
+.hero .hero-text {
+    margin-bottom: 32px;
+    color: var(--light-color);
+}
+
+.hero .hero-heading {
+    color: var(--light-color)
+}
+
+.hero .hero-heading .color-biogas {
+    color: var(--primary-color);
+    padding: 0px;
+    margin: 0px
+}
+
+.hero .hero-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+
+/* Información Profesional */
+.info-pro {
+    margin-bottom: 35px;
+}
+
+.info-pro .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.info-pro .info-content1 {
+    width: 700px;
+    margin: 30px;
+    padding-top: 30px;
+}
+
+.info-pro .info-content2 {
+    width: 500px;
+    margin: 30px;
+}
+
+.info-pro .info-subheading {
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.info-pro .info-heading {
+    margin-top: 15px;
+}
+
+.info-pro .info-bio {
+    margin-bottom: 20px;
+}
+
+.info-pro .info-content2 .btn-extra1 {
+    text-align: left;
+    padding: 0;
+}
+
+
+/*Servicios Asesoría Biogás*/
+.service-biogas {
+    margin-bottom: 75px;
+}
+
+.service-biogas .container {
+    background: url(images/asesoria-background.jpg) no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: fit-content;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.service-biogas .service-subheading {
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.service-biogas .service-heading {
+    color: var(--light-color);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.service-biogas .service-heading b {
+    color: var(--primary-color);
+}
+
+.service-biogas .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-biogas .services div {
+    padding-top: 50px;
+    padding-bottom: 43px;
+    width: 220px;
+    margin: 20px;
+    text-align: center;
+}
+
+.service-biogas .services .service-green {
+    background-color: var(--primary-color);
+    color: var(--light-color)
+}
+
+.service-biogas .services .service-white {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+.service-biogas .services span {
+    font-size: 62px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.service-biogas .services .service-name {
+    font-size: 1.45rem;
+    margin-top: 15px;
+}
+
+.service-biogas .service-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.service-biogas .service-button a {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* Confección de Planos */
+.industrial-plan {
+    margin-bottom: 45px;
+}
+
+.industrial-plan .industrial-divide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.industrial-plan .industrial-subheading {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+}
+
+.industrial-plan .industrial-heading {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.industrial-plan .industrial-image {
+    margin: 30px;
+    width: 700px;
+}
+
+.industrial-plan .industrial-services {
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: 30px;
+}
+
+.industrial-plan .industrial-services div {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 43px;
+    width: 220px;
+    margin: 0px;
+}
+
+.industrial-plan .industrial-name {
+    font-size: 1.5rem;
+}
+
+.industrial-plan .industrial-services span {
+    font-size: 78px;
+    color: var(--primary-color)
+}
+
+.industrial-plan .atex img {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 0;
+    width: 72px;
+}
+
+.industrial-plan .piping {
+    border-right: solid 3px var(--primary-color);
+    border-bottom: solid 3px var(--primary-color);
+    padding-right: 20px;
+}
+
+.industrial-plan .s-pieces {
+    border-bottom: solid 3px var(--primary-color);
+    padding-left: 20px;
+}
+
+.industrial-plan .atex {
+    border-right: solid 3px var(--primary-color);
+    padding-right: 30px;
+
+}
+
+.industrial-plan .machine {
+    padding-left: 30px;
+}
+
+
+/* Información de Contacto */
+.info-contact {
+    margin-bottom: 15px;
+}
+
+.info-contact .container {
+    background: url(images/contact-background.jpg) no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: fit-content;
+    padding-bottom: 90px;
+    padding-top: 50px;
+}
+
+.info-contact .contact-heading {
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.info-contact .contact-heading b {
+    color: var(--primary-color);
+}
+
+.info-contact .contact-text {
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.info-contact .contact-button {
+    display: flex;
+    justify-content: center;
+}
+
+.info-contact .btn-primary {
+    width: 220px;
+}
+
+
+/* Diseño Biogás */
+.design-biogas {
+    margin-bottom: 50px;
+}
+
+.design-biogas .container {
+    display: flex;
+    flex-flow: wrap-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.design-biogas .design-image {
+    width: 550px;
+    margin: 30px;
+    padding-top: 30px;
+}
+
+.design-biogas .design-info {
+    width: 300px;
+    margin: 30px;
+}
+
+.design-biogas .design-subheading {
+    color: var(--primary-color);
+    margin-bottom: 0px;
+}
+
+.design-biogas .design-heading {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.design-biogas .btn-extra1 {
+    padding-left: 0px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer .container {
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: 1fr 1fr 0.8fr 1fr;
+    justify-content: center;
+    align-items: start;
+    padding: 60px 25px 60px;
+}
+
+.footer .container a {
+    display: block;
+    color: var(--light-color);
+}
+
+.footer .title-column {
+    font-size: 1.3rem;
+    margin-top: 8px;
+}
+
+.footer .column1 img {
+    width: 325px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .column3 span {
+    font-size: 20px;
+}
+
+
+/* Clases Usadas */
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-small {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* Botones */
+.btn-primary {
+    display: inline-block;
+    padding: 11px 24px;
+    background: var(--primary-color);
+    border-radius: 0px 120px / 120px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--light-color);
+    width: 160px;
+    text-align: center;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 11px 24px;
+    background: var(--light-color);
+    border-radius: 0px 120px / 120px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--primary-color);
+    width: 160px;
+    text-align: center;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btn-secondary:hover {
+    color: var(--dark-color);
+    background-color: var(--grey-color);
+}
+
+.btn-extra1 {
+    display: inline-block;
+    padding: 13px 24px;
+    background: transparent;
+    border-radius: 0px 120px / 120px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--primary-color);
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-left: 1px;
+}
+
+.btn-extra1:hover {
+    color: var(--dark-color);
+}
+
+.btn-extra2 {
+    display: inline-block;
+    padding: 13px 30px;
+    background: transparent;
+    border-radius: 0px 120px / 120px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--light-color);
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.btn-extra2:hover {
+    color: var(--grey-color);
+}
+
+
+/* Texto */
+.text-xxl {
+    font-size: 5.4rem;
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 30px 0 20px;
+}
+
+.text-lg {
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 300;
+    margin: 20px 0 10px;
+    letter-spacing: 0.5px;
+}
+
+.text-sm {
+    font-size: 0.95rem;
+    line-height: 1.3;
+    font-weight: 400;
+    margin: 2px 0 10px;
+    letter-spacing: 0.2px;
+}
+
+
+/* Hamburger Button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 6px 0;
+}
+
+/* Menú Móvil */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: var(--light-color);
+    box-shadow: 0px 0px 10px var(--grey-color);
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    margin-top: 120px;
+    padding-right: 10px;
+}
+
+.mobile-menu ul li {
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+
+/* Media Queries */
+@media (max-width:1350px) {
+    .info-pro .info-content2 {
+        width: 700px;
+        margin-top: 0;
+    }
+
+    .info-pro .info-subheading {
+        margin: 0;
+    }
+
+    .info-pro .info-pie {
+        text-align: right;
+    }
+}
+
+@media (max-width:1300px) {
+    .industrial-plan .industrial-image {
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+    .footer .container {
+        grid-template-columns: auto;
+    }
+
+    .footer .container div {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:999px) {
+    .design-biogas .design-info {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .design-biogas .design-heading {
+        margin-bottom: 12px;
+    }
+
+    .design-biogas .design-image {
+        padding-top: 0;
+    }
+
+    .design-biogas .design-info a {
+        padding-right: 0;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        margin-top: 37px;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        box-shadow: 0px 0px 10px var(--grey-color);
+    }
+
+    .navbar .logo img {
+        width: 110px
+    }
+
+    .contact-bar {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .hero .container {
+        padding-top: 180px;
+        height: 800px;
+    }
+}
+
+@media(max-width:530px) {
+    .industrial-plan .industrial-services {
+        margin: 12px 0 0;
+    }
+
+    .industrial-plan .industrial-services div {
+        width: 140px;
+        padding: 10px 0 10px;
+    }
+
+    .industrial-plan .industrial-name {
+        margin: 10px 0 10px;
+    }
+
+    .hero {
+        margin-bottom: 0;
+    }
+
+    .service-biogas .container {
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+
+    .service-biogas {
+        margin-bottom: 55px;
+    }
+
+    .info-contact .container {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .info-contact {
+        margin-bottom: 0;
+    }
+
+    .design-biogas .design-image {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:440px) {
+    .hero .hero-heading {
+        font-size: 4rem;
+    }
+
+    .contact-bar .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:420px) {
+    .hero .hero-buttons {
+        display: inline-block;
+    }
+
+    .hero .hero-buttons a {
+        width: 100%;
+        margin-bottom: 12px
+    }
+
+    .design-biogas .design-image {
+        width: auto;
+    }
+
+    .design-biogas .container {
+        overflow: unset;
+    }
+}
+
+@media (max-width:412px) {
+    .navbar {
+        margin-top: 59px;
+    }
+}
+
+@media (max-width:340px) {
+    .hero .hero-heading {
+        font-size: 3.5rem;
+    }
+
+    .info-pro .info-heading {
+        font-size: 3.2rem;
+    }
+
+    .service-biogas .service-heading {
+        font-size: 3.2rem;
+    }
+
+    .service-biogas .service-heading {
+        font-size: 3.2rem;
+    }
+
+    .info-contact .contact-heading {
+        font-size: 3rem;
+    }
+
+    .design-biogas .design-heading {
+        font-size: 3rem;
+    }
+}
